@@ -139,7 +139,6 @@ Promise.allSettled(promises)
       activeSliderIndex = event.target.dataset.index;
       swiperModal.slideTo(activeSliderIndex, 0, true);
       if (activeSliderIndex == swiperModal.activeIndex) {
-        console.log(configSlider[activeSliderIndex]);
         configSlider[activeSliderIndex].player.play();
       }
       modalSwiper.classList.add("modal_fixed");
